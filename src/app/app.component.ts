@@ -12,4 +12,7 @@ export class AppComponent {
     {id:1, name:"Jakson", country:"Perú"},
     {id:2, name:"Lucas", country:"Alemania"}
   ];
+
+  //Metodo para listar
+  
 }

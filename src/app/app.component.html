@@ -17,7 +17,9 @@
     <div class="col-md-4">
       <span>{{ title }} app is running!</span>
       <ul class="list-group">
-
+        <li *ngFor="let employee of employeeArray" class="list-group-item">
+            {{employee.name}}
+        </li>
       </ul>
     </div>
   </div>
