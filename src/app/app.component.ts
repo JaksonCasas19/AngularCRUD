@@ -8,5 +8,8 @@ import {Employee} from './models/employee';
 })
 export class AppComponent {
   title = 'angular-crud';
-
+  employeeArray:Employee[] = [
+    {id:1, name:"Jakson", country:"Perú"},
+    {id:2, name:"Lucas", country:"Alemania"}
+  ];
 }
