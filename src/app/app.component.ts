@@ -31,7 +31,10 @@ export class AppComponent {
   delete(){
     /*Por cada elemento que recorra vamos hacer lo siguiente, si cada elemento es distinto al empleado
     Entonces lo va dejar tal cual*/
-    this.employeeArray = this.employeeArray.filter(x => x!= this.selectedEmployee);
-    this.selectedEmployee = new Employee();
+    if(confirm('Are you sure you want to delete it?')){
+        this.employeeArray = this.employeeArray.filter(x => x!= this.selectedEmployee);
+        this.selectedEmployee = new Employee();
+    }
+ 
   }
 }
