@@ -7,12 +7,13 @@ import {Employee} from './models/employee';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-crud';
+  title = 'Employee CRUD';
   employeeArray:Employee[] = [
     {id:1, name:"Jakson", country:"Perú"},
     {id:2, name:"Lucas", country:"Alemania"}
   ];
 
   //Metodo para listar
-  
+  selectedEmployee:Employee = new Employee();
+
 }
