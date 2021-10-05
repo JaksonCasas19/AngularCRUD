@@ -16,4 +16,7 @@ export class AppComponent {
   //Metodo para listar
   selectedEmployee:Employee = new Employee();
 
+  addOrEdit(){
+    this.selectedEmployee.id = this.employeeArray.length + 1;
+  }
 }
