@@ -23,7 +23,7 @@
 
           <button (click)="addOrEdit()" class="btn btn-primary">Submit</button>
           <!--El boton no se mostrara si no se ha seleccionado un Item-->
-          <button *ngIf="selectedEmployee.id !==0" class="btn btn-danger">Delete</button>
+          <button *ngIf="selectedEmployee.id !==0" class="btn btn-danger" (click)="delete()">Delete</button>
         </div>
       </div>
     </div>
