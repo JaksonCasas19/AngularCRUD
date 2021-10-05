@@ -16,8 +16,15 @@ export class AppComponent {
   //Metodo para listar
   selectedEmployee:Employee = new Employee();
 
+  openForEdit(employee:Employee){
+    this.selectedEmployee = employee;
+  }
+
   addOrEdit(){
-    this.selectedEmployee.id = this.employeeArray.length + 1;
-    this.employeeArray.push(this.selectedEmployee)
+    if(this.selectedEmployee.id === 0){
+      this.selectedEmployee.id = this.employeeArray.length + 1; //Para Icrementar el id de manera automatica
+      this.employeeArray.push(this.selectedEmployee); //Para crear 
+    }
+    this.selectedEmployee = new Employee(); //Para limpiar los datos
   }
 }
